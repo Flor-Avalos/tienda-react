@@ -1,17 +1,18 @@
+import {useState} from 'react'
 
-const FuncionContador = () =>{
-    let contador = 0
+const FuncionContador = (props) =>{
+    const [contador, setContador] = useState(0)
 
     const resta = () => {
-        contador -1
+        setContador(contador -1)
     }
     const suma = () =>{
-        contador +1
+        setContador(contador +1)
     }
 
     return (
         <>
-        <h3> Contador</h3>
+        <h3> CONTADOR </h3>
         <h3> {contador}</h3>
         <botton onclick={resta}> - </botton>
         <botton onclick={suma}> + </botton>
