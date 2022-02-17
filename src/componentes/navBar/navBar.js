@@ -1,19 +1,28 @@
 import './NavBar.css'
-import '../Cardwidget/Cardwidget'
 
-const NavBar = (greeting, ...rest) => {
+
+
+const NavBar = () => {
+
+  const handleAlfajor= () => {
+  console.log('Alfajores')
+}
+  const handleDulces= () => {
+  console.log('Dulces')
+}
+  const handleChoco= () => {
+  console.log('Chocolates')
+}
     
   return (
       <nav className="NavBar">
         <div>
-          <img src= {'./imagenes/Logo.jpg'} alt='logo'/>
-      
+          <img src= {'./imagenes/Logo.jpg'} alt='logo'/>      
         </div>
-        <div className="Categories">       
-                    
-          <button className='Option'>Alfajores</button>
-          <button className='Option'>Dulces</button>
-          <button className='Option'>Chocolates</button>
+        <div className="Categories">                      
+          <button  handleclick= {handleAlfajor}>Alfajores</button>
+          <button handleclick={handleDulces}>Dulces</button>
+          <button handleclick={handleChoco}>Chocolates</button>
         </div>
       </nav>
   )
