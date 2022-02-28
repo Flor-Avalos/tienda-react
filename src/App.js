@@ -1,15 +1,15 @@
-import NavBar from './componentes/NavBar/NavBar';
 import './App.css';
-import Cardwidget from './componentes/Cardwidget/Cardwidget';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
+import NavBar from './componentes/NavBar/NavBar';
+
+
 
 function App() {
   return (
     <div className="App">      
       <NavBar />  
-      <ItemListContainer greeting="Bienvenidos a mi tienda!"/>   
-      <Cardwidget/> 
-      
+      <ItemListContainer greeting="Bienvenidos a mi E-commerce!"/>   
+            
     </div>
   );
 

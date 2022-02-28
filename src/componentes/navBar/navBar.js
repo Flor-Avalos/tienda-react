@@ -1,5 +1,6 @@
 import './NavBar.css'
 import '../Cardwidget/Cardwidget'
+import Cardwidget from '../Cardwidget/Cardwidget';
 
 const NavBar = (greeting, ...rest) => {
     
@@ -9,7 +10,8 @@ const NavBar = (greeting, ...rest) => {
           <img src= {'./imagenes/Logo.jpg'} alt='logo'/>
       
         </div>
-        <div className="Categories">       
+        <div className="Categories">     
+          <Cardwidget/>  
                     
           <button className='Option'>Alfajores</button>
           <button className='Option'>Dulces</button>
