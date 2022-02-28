@@ -1,16 +1,16 @@
-import { getProductos } from "../../Asyncmok";
+import { getProductos } from "../mock/productos";
+import  Item from './Item' 
 
 
-const ItemList= () => {
+const ItemList= (productos) => {
     return (
-        <ul>
-        {productos.map (producto =>{
-            return <Item key={producto.id}> 
-            {producto.name}</Item>
+        <>
+        {productos.map ((producto) =>(
+             <item   producto={producto} key={producto.id} />
                 
-        })
-        }        
-        </ul>
+        )) }  
+        
+        </>
     )
 } 
 
