@@ -1,8 +1,16 @@
+import React, {useState} from "react";
 import ItemList from "../ItemList/ItemList";
-
+import { getProductos } from "../../Asyncmok";
 
 const ItemListContainer = (greeting, ... rest) =>{
-    return(
+    const [productos, setproductos] = useState ([])
+
+        getProductos.then ( (resolve)=>{
+            console.log(resolve);
+
+        })
+
+        return(
         <>
         
             <h1>{greeting}</h1>
