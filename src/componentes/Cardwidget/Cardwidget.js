@@ -1,3 +1,5 @@
+import React from "react";
+
 const Cardwidget = (backgroundColor = '#8C30F5', colorText ='white') =>{
     return  (
         <div>  

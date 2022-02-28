@@ -1,9 +1,7 @@
+import Cardwidget from '../Cardwidget/Cardwidget'
 import './NavBar.css'
 
-
-
 const NavBar = () => {
-
   const handleAlfajor= () => {
   console.log('Alfajores')
 }
@@ -24,6 +22,7 @@ const NavBar = () => {
           <button handleclick={handleDulces}>Dulces</button>
           <button handleclick={handleChoco}>Chocolates</button>
         </div>
+        <Cardwidget/>
       </nav>
   )
 }

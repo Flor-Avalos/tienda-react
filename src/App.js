@@ -6,17 +6,19 @@ import FuncionContador from './componentes/Contador/Contador';
 
 
 function App() {
+
+  const addToCart = (number)=>{
+    console.log(`se agregaron al carrito ${number} items`)
+  }
   return (
     <div className="App">      
       <NavBar />  
-      <ItemListContainer greeting="Bienvenidos a mi tienda!"/>   
+      <ItemListContainer greeting="Bienvenidos a mi E-commerce!"/>   
       <Cardwidget /> 
-      <FuncionContador/>
+      <FuncionContador stock={10} initial={0}/>
     </div>
   );
-
 }
-
 export default App;
 
 

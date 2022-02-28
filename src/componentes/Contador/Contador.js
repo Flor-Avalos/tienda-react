@@ -1,7 +1,8 @@
-import {useState} from 'react'
+import React,{useState} from 'react';
+import './Contador.css';
 
-const FuncionContador = (props) =>{
-    const [contador, setContador] = useState(0)
+const FuncionContador = ({stock, initial}) =>{
+    const [contador, setContador] = useState(1)
 
     const resta = () => {
         setContador(contador -1)
