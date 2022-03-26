@@ -1,6 +1,4 @@
 
-
-
 const productos = [
     {
         id:1, 
@@ -36,10 +34,16 @@ const productos = [
     }
 ];
 
-
 export const getProductos= () =>{
     return new Promise ((resolve) => {
         setTimeout(() =>{
             resolve(productos)}, 2000)
+    })
+}
+
+export const getProductos= () =>{
+    return new Promise ((resolve) => {
+        setTimeout(() =>{
+            resolve(productos [0])}, 2000)
     })
 }
